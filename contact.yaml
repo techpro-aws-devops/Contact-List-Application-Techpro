@@ -93,7 +93,7 @@ Resources:
                 echo "${MyDBURI}" > /home/ec2-user/dbserver.endpoint
                 cd /home/ec2-user
                 git clone https://github.com/techpro-aws-devops/Contact-List-Application-Techpro.git
-                cd Contact-List-Application
+                cd Contact-List-Application-Techpro
                 python3 contact-list-app.py
               - MyDBURI: !GetAtt MyDatabaseServer.Endpoint.Address
 
